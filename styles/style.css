@@ -6,3 +6,8 @@
     padding: 0;
 }
 
+.header-banner-container {
+    background: linear-gradient(180.00deg, rgba(3, 7, 18, 0.5), rgba(3, 7, 18, 0) 100%), url(../images/banner.png);
+  background-size:  cover;
+
+}
