@@ -42,3 +42,17 @@ background-repeat: no-repeat;
   background-color: #ddd; 
 }
 
+.coupon-button {
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.coupon-button:hover {
+  background-color: #45a049;
+  color: white;
+}
+.coupon-button:active {
+  transform: translateY(1px); 
+}
+
+
