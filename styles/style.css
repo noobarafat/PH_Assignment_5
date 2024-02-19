@@ -56,5 +56,5 @@ background-repeat: no-repeat;
 }
 
 .seat.selected {
-  background-color: green;
+  background-color: rgb(42, 204, 42);
 }

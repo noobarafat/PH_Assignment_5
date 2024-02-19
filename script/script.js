@@ -10,33 +10,36 @@ buyTicketButton.addEventListener('click', function () {
 
 
 
-// Get references to the seat buttons
 const seatButtons = document.querySelectorAll('.seat');
-
-// Get reference to the seats left count span
 const seatsLeftCountSpan = document.getElementById('seats-left-count');
 
-// Initialize the count of available seats
-let availableSeats = 40;
+let availableSeats = 4;
 
-// Add event listener to each seat button
-seatButtons.forEach(seatButton => {
-    seatButton.addEventListener('click', () => {
-        // Check if the seat is already selected
+seatButtons.forEach(function (seatButton) {
+    seatButton.addEventListener('click', function () {
         if (!seatButton.classList.contains('selected')) {
-            // If not selected, select the seat
-            seatButton.classList.add('selected');
-            // Decrease available seat count
-            availableSeats--;
-            // Update the display of available seats
-            seatsLeftCountSpan.textContent = availableSeats;
+            if (availableSeats > 0) {
+                seatButton.classList.add('selected');
+                availableSeats--;
+                seatsLeftCountSpan.textContent = availableSeats;
+            } else {
+                alert("You can only select up to 4 seats.");
+            }
         } else {
-            // If already selected, deselect the seat
             seatButton.classList.remove('selected');
-            // Increase available seat count
             availableSeats++;
-            // Update the display of available seats
             seatsLeftCountSpan.textContent = availableSeats;
         }
     });
 });
+
+
+
+
+
+
+
+
+
+
+
