@@ -55,4 +55,6 @@ background-repeat: no-repeat;
   transform: translateY(1px); 
 }
 
-
+.seat.selected {
+  background-color: green;
+}

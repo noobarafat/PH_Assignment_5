@@ -52,7 +52,8 @@
                 </h1>
                 <p class=" w-[50%] mx-auto text-center text-white pb-16 pt-4">Yes, you can run unit tests and view the
                     results directly within the app. The integrated testing features allow for a streamlined .</p>
-                <button class="bg-green-400 py-2 px-6 rounded-lg font-bold text-center mb-40">Buy Tickets</button>
+                <button id="buy-ticket-button"
+                    class=" bg-green-400 py-2 px-6 rounded-lg font-bold text-center mb-40">Buy Tickets</button>
             </div>
         </section>
 
@@ -139,10 +140,13 @@
                                         <p>Coach-009-WEB ! AC_Business</p>
                                     </div>
                                 </div>
-                                <button
+
+                                <button id="seats-left"
                                     class="flex items-center ml-48 bg-green-400 py-2 px-4 rounded-xl gap-2 font-bold">
-                                    <img src="./images/seat-green.png" alt=""> 40 Seats
-                                    Left</button>
+                                    <img src="./images/seat-green.png" alt=""> <span id="seats-left-count">40</span>
+                                    Seats Left
+                                </button>
+
                             </div>
                             <div class="bg-white my-6 px-7 py-10 rounded-2xl  ">
                                 <div class="flex justify-between pb-5">
@@ -180,7 +184,7 @@
                         </div>
                     </div>
 
-                    <div class="flex gap-20">
+                    <div id="ticket-select" class=" flex gap-20">
                         <!-- Bus seat -->
                         <div class="w-[60%]">
                             <div>
@@ -208,7 +212,7 @@
                                 </div>
                             </div>
 
-                            <div class="bus-seats mt-5 ">
+                            <div id="bus-seats" class="bus-seats mt-5 ">
                                 <div class="row flex justify-between items-center pb-5">
                                     <P>A</P>
                                     <button class="seat">A1</button>
@@ -301,7 +305,7 @@
                                     <div class="mt-5 relative">
                                         <input class="w-full rounded-lg py-4 px-5" type="text" name="" id=""
                                             placeholder="Have any coupon? ">
-                                        <div class="flex justify-end absolute top-[10%] left-[75%] ">
+                                        <div class="flex justify-end absolute top-[7%] left-[75%] ">
                                             <button
                                                 class=" coupon-button bg-green-400 px-5 py-2 rounded-lg font-bold">Apply</button>
                                         </div>
@@ -314,18 +318,22 @@
                                 </div>
                                 <div class="pt-10">
                                     <p class="font-bold pb-1">Passenger Name*</p>
-                                    <input class="w-full px-5 py-3 rounded-lg border-2" type="text" placeholder="Enter Your Name"
-                                        required>
+                                    <input class="w-full px-5 py-3 rounded-lg border-2" type="text"
+                                        placeholder="Enter Your Name" required>
                                     <p class="font-bold pt-5 pb-1">Phone Number*</p>
                                     <input class="w-full px-5 py-3 rounded-lg border-2 " type="number"
                                         placeholder="Enter Your Phone Number" required>
                                     <p class="font-bold pt-5 pb-1">Email*</p>
                                     <input class="w-full px-5 py-3 rounded-lg border-2" type="email"
                                         placeholder="Enter Your Email ID" required>
-                            
+
                                 </div>
                                 <div class="w-full text-center py-5">
                                     <button class="bg-green-400 w-full py-3  rounded-lg font-bold">Next</button>
+                                </div>
+                                <div class="flex justify-evenly text-gray-400">
+                                    <p class="underline underline-offset-4">Terms & Condition</p>
+                                    <p class="underline underline-offset-4">Cancellation Policy</p>
                                 </div>
                             </div>
 
@@ -342,6 +350,7 @@
     <footer>
 
     </footer>
+    <script src="./script/script.js"></script>
 </body>
 
 </html>
