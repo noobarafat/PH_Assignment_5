@@ -283,7 +283,7 @@
                                     <button id="seat-J3" class="seat">J3</button>
                                     <button id="seat-J4" class="seat">J4</button>
                                 </div>
-                                
+
                             </div>
                         </div>
                         <!-- Seat details -->
@@ -295,13 +295,20 @@
                             <div>
                                 <div class="bg-gray-200 mt-5 rounded-lg px-6">
                                     <div class="flex justify-between font-bold pt-5">
-                                        <p>Seat</p>
-                                        <p>Class</p>
-                                        <p>Price</p>
+                                        <div id="selected-seat">
+                                            <p>Seat</p>
+                                        </div>
+                                        <div id="selected-class">
+                                            <p>Class</p>
+                                        </div>
+                                        <div id="selected-price">
+                                            <p>Price</p>
+                                        </div>
                                     </div>
+                                    <ul id="selected-seats-list"></ul>
                                     <div class="flex justify-between font-bold pt-5">
                                         <p>Total Price</p>
-                                        <p>0</p>
+                                        <p id="total-price">0</p>
                                     </div>
                                     <div class="mt-5 relative">
                                         <input class="w-full rounded-lg py-4 px-5" type="text" name="" id=""
@@ -312,7 +319,7 @@
                                         </div>
                                         <div class="flex justify-between font-bold pt-5 pb-5">
                                             <p>Grand Total</p>
-                                            <p>0</p>
+                                            <p id="grand-total">0</p>
                                         </div>
                                     </div>
 
